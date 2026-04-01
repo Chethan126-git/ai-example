@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elderly Care System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart Elderly Care System</h1>
+
+<!-- INDEPENDENCE -->
+<section>
+  <h2>Independence</h2>
+
+  <input id="taskInput" placeholder="Enter Task">
+  <button onclick="addTask()">Add Task</button>
+  <ul id="taskList"></ul>
+
+  <button onclick="selfCheck()">Self Check</button>
+  <p id="memory"></p>
+  <p id="indScore"></p>
+</section>
+
+<!-- SAFETY -->
+<section>
+  <h2>Safety</h2>
+
+  <button onclick="updateActivity()">I am Active</button>
+  <button onclick="triggerSOS()">SOS</button>
+  <button onclick="simulateFall()">Simulate Fall</button>
+
+  <p id="safetyStatus"></p>
+  <p id="location">Location: Tumkur (Simulated)</p>
+</section>
+
+<!-- WELL-BEING -->
+<section>
+  <h2>Well-being</h2>
+
+  <select id="mood">
+    <option>Happy</option>
+    <option>Neutral</option>
+    <option>Sad</option>
+  </select>
+  <button onclick="saveMood()">Save Mood</button>
+
+  <div>
+    <input id="chatInput" placeholder="Talk...">
+    <button onclick="chat()">Send</button>
+    <p id="chatOutput"></p>
+  </div>
+
+  <p id="suggestion"></p>
+  <p id="wellScore"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
